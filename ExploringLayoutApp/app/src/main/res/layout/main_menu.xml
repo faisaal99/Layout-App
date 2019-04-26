@@ -10,6 +10,7 @@
         android:layout_height="wrap_content"
         android:gravity="center"
         android:text="Test Text"
+        android:textColor="#000000"
         android:textSize="50sp" />
 
     <EditText
@@ -25,53 +26,67 @@
         android:id="@+id/button"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginBottom="100sp"
         android:onClick="changeTextView"
         android:text="Set Text" />
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp">
 
         <TextView
             android:id="@+id/textView2"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="10sp"
-            android:text="Linear Horizontal Layout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:onClick="loadConstraintLayout"
+            android:text="Linear ConstraintLayout"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:onClick="loadConstraintLayout"
             android:text="Load" />
     </LinearLayout>
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="horizontal">
+        android:orientation="horizontal"
+        android:paddingLeft="15sp"
+        android:paddingRight="15sp">
 
         <TextView
             android:id="@+id/textView3"
-            android:layout_width="wrap_content"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:paddingLeft="10sp"
-            android:text="Load TableLayout" />
+            android:layout_gravity="center_vertical"
+            android:layout_weight=".7"
+            android:onClick="loadTableLayout"
+            android:text="Load TableLayout"
+            android:textColor="#000000"
+            android:textSize="20sp" />
 
         <Button
             android:id="@+id/button3"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_weight="1"
+            android:onClick="loadTableLayout"
             android:text="load" />
     </LinearLayout>
 
     <RatingBar
         android:id="@+id/ratingBar"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15sp"
+        android:layout_marginTop="75sp"
+        android:layout_marginRight="15sp" />
 </LinearLayout>
